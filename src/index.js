@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './component/app';
-import registerServiceWorker from './registerServiceWorker';
+import { render } from 'react-dom';
+import Index from './page/index';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+render(<Index />, document.querySelector('#root'));
