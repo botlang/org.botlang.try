@@ -88,11 +88,11 @@ class Workspace extends React.Component {
 
     return (
       <div className='workspace'>
-        <div>{
+        {
           this.state.codeVisible
             ? <textarea id='code' onChange={this.handleCodeChange} value={this.state.code} />
             : null
-        }</div>
+        }
         <div id='messages'>{messages}</div>
         <form onSubmit={this.handleSubmit}>
           <Grid container className={classes.root}>
